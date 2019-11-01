@@ -12,13 +12,18 @@ const tutorials = [
 ];
 
 
-function toTitleFun() {
+// function toTitleFun() {
+//   return tutorials.map(titles => 
+//   titles.toLowerCase().split(' ').map(word => {
+//     return word.charAt(0).toUpperCase() + word.substr(1);
+//   }).join(' '));
+  
+// }
+const titleCased = () => {
   return tutorials.map(titles => 
   titles.toLowerCase().split(' ').map(word => {
     return word.charAt(0).toUpperCase() + word.substr(1);
   }).join(' '));
-  
 }
-const titleCased =toTitleFun(); 
 /////////////////////////
 
